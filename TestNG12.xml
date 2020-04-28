@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- <suite name="All Test Suite"> <test name="annotationdemo"> <classes> 
+	<class name="TC1"> <methods> <include name="test1" /> <include name="test2" 
+	/> </methods> </class> <class name="TC02"> <methods> <include name="test3" 
+	/> <include name="test4" /> </methods> </class> </classes> </test> </suite> -->
+
+<!-- <suite name="All Test Suite"> <parameter name="browser" value="chrome"></parameter> 
+	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter> 
+	<test name="parametertest1"> <classes> <class name="ParameterExample" /> 
+	</classes> </test> <parameter name="browser" value="firefox"></parameter> 
+	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter> 
+	<test name="parametertest2"> <classes> <class name="ParameterExample" /> 
+	</classes> </test> </suite> -->
+
+<!-- <suite name="All Test Suite" parallel="tests" thread-count="2"> -->
+
+<!-- <test name="test2"> -->
+
+<!-- <classes> -->
+<!-- <class name="parallelTesting.ParallelTest1" /> -->
+
+<!-- </classes> -->
+<!-- </test> -->
+
+<!-- <test name="test1"> -->
+
+<!-- <classes> -->
+
+<!-- <class name="parallelTesting.ParallelTesting2" /> -->
+<!-- </classes> -->
+<!-- </test> -->
+<!-- </suite> -->
+
+<suite name="All Test Suite">
+<listeners >
+<listener class-name="Listener.CustomListener"></listener>
+
+</listeners>
+
+	<test name="test">
+
+		<classes>
+			<class name="Listener.ListenerTest" />
+
+		</classes>
+	</test>
+
+</suite>

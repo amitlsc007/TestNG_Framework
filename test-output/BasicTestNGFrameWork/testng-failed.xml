@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BasicTestNGFrameWork]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login application(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="SecondTestCase">
+        <methods>
+          <include name="SearchCustomer"/>
+        </methods>
+      </class> <!-- SecondTestCase -->
+    </classes>
+  </test> <!-- Login application(failed) -->
+</suite> <!-- Failed suite [BasicTestNGFrameWork] -->
